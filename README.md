@@ -1,6 +1,9 @@
 # Concrete Compressive Strength API
 
+![nust_logo](logo_nust_png.png)
+
 ![developer_image](developer_shape.png)
+
 
 This project imports tensorflow generated model for predicting the strength of concrete.
 
