@@ -1,0 +1,7 @@
+###Deploy Service
+version: "3"
+services:
+  digital-notice-board-service:
+    image: qubedprince/concrete-compressive-strength-api-image:latest
+    ports:
+      - "8080:8080"

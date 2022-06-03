@@ -1,0 +1,16 @@
+repos:
+  - repo: local
+    hooks:
+      - id: Clean project
+        name: Clean project
+        entry: bash -c 'mvn clean'
+        language: system
+        pass_filenames: false
+  - repo: local
+    hooks:
+      - id: Dependecy check relationship
+        name: Dependecy check
+        entry: bash -c 'mvn dependency:tree'
+        language: system
+        pass_filenames: false
+

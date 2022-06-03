@@ -1,0 +1,32 @@
+- name: update micro service
+  hosts: developer-prince-production
+  remote_user: root
+  become: true
+  vars:
+    container_image: qubedprince/concrete-compressive-strength-api-image
+    working_directory: concrete-compressive-strength-api
+
+  tasks:
+    - name: Create Remote Directory
+      file:
+        path: ~/{{working_directory}}
+        state: directory
+        owner: root
+        group: root
+        mode: 0755
+
+    - name: Copy File with play book
+      become: true
+      copy:
+        src: /var/lib/jenkins/workspace/concrete-compressive-strength-api/docker-compose.yml
+        dest: ~/{{working_directory}}
+        owner: root
+        group: root
+        mode: 0755
+
+    - name: Pull Image
+      command: docker pull '{{container_image}}'
+
+    - name: Deploy Service
+      command: docker-compose -f ~/{{working_directory}}/docker-compose.yml up --force-recreate -d
+

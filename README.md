@@ -13,7 +13,11 @@ Please Take Note the Project was compiled by: DeveloperPrince (Prince Kudzai Map
 
 1. Java 8 
 2. maven 3.6.3
-
+3. Docker
+4. docker compose cli
+5. grype (optional)
+6. Jenkins (optional)
+7. pre-commit (optional)
 
 We assume the audience reading this already or knows how to set up java and maven on their machine (Win/Linux)
 ## Run the project
@@ -36,6 +40,27 @@ mvn spring-boot:run
 
 ```bash
 http://localhost:8080/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/
+```
+
+## Build a docker image and Run Container
+
+In order to build a docker image run, this may be considered an additional step to prepare project for deployment.
+
+1. Build Project 
+
+```bash
+mvn package
+```
+
+2. Build image
+```bash
+docker build -t qubedprince/concrete-compressive-strength-api-image .
+```
+
+3 Run Docker Container
+
+```bash
+
 ```
 
 #### Contact
