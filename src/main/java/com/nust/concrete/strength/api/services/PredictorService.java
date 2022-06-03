@@ -20,7 +20,7 @@ public class PredictorService {
     public ResponseEntity<Object> resolveCCSST(ConcreteCompositionInputDto concreteCompositionInputDto) throws IOException, InvalidKerasConfigurationException, UnsupportedKerasConfigurationException {
 
         String simpleMlp = new ClassPathResource(
-                "CCST_predictor.h5").getFile().getPath();
+                "ccst_predictor_sequential_model.h5").getFile().getPath();
         MultiLayerNetwork model = KerasModelImport.
                 importKerasSequentialModelAndWeights(simpleMlp);
 
