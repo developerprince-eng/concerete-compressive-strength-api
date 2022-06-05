@@ -14,6 +14,8 @@ Please Take Note the Project was compiled by: DeveloperPrince (Prince Kudzai Map
 
 ## Requirements
 
+Before you install the necessary frameworks you need to ensure that your machine has a minimum of 4GB of RAM, CPU that supports AVX and an additional hardware requirement of NVIDA graphics card which supports CUDA (which is an added advantage in computing).
+ 
 1. Java 8 
 2. maven 3.6.3
 3. Docker
@@ -63,7 +65,7 @@ docker build -t qubedprince/concrete-compressive-strength-api-image .
 3 Run Docker Container
 
 ```bash
-
+docker run -d --name ccst-api -p 8080:8080 qubedprince/concrete-compressive-strength-api-image
 ```
 
 #### Contact
