@@ -68,6 +68,11 @@ docker build -t qubedprince/concrete-compressive-strength-api-image .
 docker run -d --name ccst-api -p 8080:8080 qubedprince/concrete-compressive-strength-api-image
 ```
 
+If you have docker compose is installed you can run the service easily by making sure that in the root of the project you run
+
+```bash
+docker-compose up
+```
 #### Contact
 
 Please take note of the following contact details for further assistance
