@@ -1,16 +1,14 @@
 # Concrete Compressive Strength API
 
-![nust_logo](logo_nust_png.png)
-
 ![developer_image](developer_shape.png)
-
+---
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) ![Intellij](https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white) 
+---
 
 This project imports tensorflow generated model for predicting the strength of concrete.
 
-This is Repository for the purpose for an academic research project for IME at NUST
+This is Repository for the purpose for experimentation and a POC
 with AI using Tensorflow.
-
-Please Take Note the Project was compiled by: DeveloperPrince (Prince Kudzai Maposa N01416165H) for practice purposes
 
 ## Requirements
 
@@ -80,4 +78,4 @@ Please take note of the following contact details for further assistance
 ![developer_close_shape](developer_shape3.png)
 
 >Cellphone/Mobile Number: +263786808538/+263714272770
->Email address: princekudzaimaposa94@gmail.com
+>Email address: prince@developer.co.zw
